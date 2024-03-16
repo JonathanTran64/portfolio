@@ -1,27 +1,23 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Buttons from "./Button";
 
 const Navbar = styled.div`
   display: flex;
   align-items: center;
-
+  position: fixed;
+  top: 0;
   height: 100px;
-  background-color: black;
-  a {
-    margin-left: 60px;
-    text-decoration: none;
-    color: white;
-    font-size: 21px;
-  }
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 `;
 
 const Nav = () => {
   return (
     <Navbar>
-      <Link>Home</Link>
-      <Link>About Me</Link>
-      <Link>Projects</Link>
-      <Link>Contact</Link>
+      <Buttons text="Home" id="home" />
+      <Buttons text="About" id="about" />
+      <button>Projects</button>
+      <button>Contact</button>
     </Navbar>
   );
 };
