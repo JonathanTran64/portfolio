@@ -8,13 +8,6 @@ import nodejsLogo from "../img/nodejs.png";
 import mongodbLogo from "../img/mongodblogo.png";
 import reactLogo from "../img/reactLogo.png";
 
-import htmlGrayLogo from "../img/html5gray.png";
-import cssGrayLogo from "../img/css3gray.png";
-import jsGrayLogo from "../img/jsgray.png";
-import nodejsGrayLogo from "../img/nodejsgray.png";
-import mongodbGrayLogo from "../img/mongodblogogray.png";
-import reactGrayLogo from "../img/reactLogoGray.png";
-
 import htmlWhiteLogo from "../img/html5white.png";
 import cssWhiteLogo from "../img/css3white.png";
 import jsWhiteLogo from "../img/jswhite.png";

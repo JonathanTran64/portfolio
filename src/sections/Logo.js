@@ -16,10 +16,10 @@ const LogoImg = styled.img`
   height: 100px;
   object-fit: contain;
   margin: 5px;
-  transition: transform 1s;
+  transition: transform 0.6s;
 
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
     transition: transform 0.6s;
   }
 
@@ -45,36 +45,22 @@ const Name = styled.p`
 
 const Logo = ({ name, image, imageGray }) => {
   const [hover, setHover] = useState(false);
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
 
-  let imageHover;
-  if (hover) {
-    imageHover = image;
-  } else {
-    imageHover = imageGray;
-  }
-
-  useEffect(() => {
-    const image = document.getElementById(name);
-
-    const handleMouseEnter = () => {
-      setHover(true);
-    };
-
-    const handleMouseLeave = () => {
-      setHover(false);
-    };
-
-    image.addEventListener("mouseenter", handleMouseEnter);
-    image.addEventListener("mouseleave", handleMouseLeave);
-    return () => {
-      image.removeEventListener("mouseenter", handleMouseEnter);
-      image.removeEventListener("mouseleave", handleMouseLeave);
-    };
-  }, [hover]);
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
 
   return (
     <Container>
-      <LogoImg src={imageHover} id={name} />
+      <LogoImg
+        src={hover ? image : imageGray}
+        id={name}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      />
       <Name>{name}</Name>
     </Container>
   );

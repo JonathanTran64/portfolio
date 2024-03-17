@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import scrolldownImage from "../img/scrolldown.gif";
 import Divider from "./Divider";
 import ScrollMouse from "./ScrollMouse";
 
@@ -16,6 +15,16 @@ const Container = styled.div`
 const Intro = styled.h1`
   font-size: 80px;
   margin-bottom: 10px;
+
+  @media (max-width: 1500px) {
+    font-size: 60px;
+  }
+`;
+
+const Job = styled.h1`
+  @media (max-width: 1500px) {
+    font-size: 25px;
+  }
 `;
 
 const ProjectButton = styled.button`
@@ -35,12 +44,11 @@ const ProjectButton = styled.button`
     transform: translateY(-10%);
     transition: transform 0.3s;
   }
-`;
 
-const Scroll = styled.img`
-  width: 100px;
-  position: relative;
-  top: 30%;
+  @media (max-width: 1500px) {
+    font-size: 15px;
+    width: 230px;
+  }
 `;
 
 const Home = () => {
@@ -53,7 +61,7 @@ const Home = () => {
     <>
       <Container id="home">
         <Intro>Hi, I'm Jonathan.</Intro>
-        <h1>Full-Stack Web Developer 🤓</h1>
+        <Job>Full-Stack Web Developer </Job>
         <ProjectButton onClick={handleClick}>PROJECTS</ProjectButton>
         <ScrollMouse />
       </Container>
