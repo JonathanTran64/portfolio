@@ -4,7 +4,7 @@ const UnderlineDiv = styled.div`
   margin: 10px auto;
   height: 6px;
   width: 70px;
-  background-color: lightgreen;
+  background-color: var(--theme);
   border-radius: 40px;
 `;
 

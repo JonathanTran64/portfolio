@@ -3,20 +3,15 @@ import styled from "styled-components";
 import Skills from "./Skills";
 import Description from "./Description";
 import Underline from "./Underline";
+import Divider from "./Divider";
+import TitleSection from "./TitleSection";
 
 const Container = styled.div`
   height: 100vh;
-  color: white;
 
   @media (max-width: 1300px) {
     height: 100%;
   }
-`;
-
-const AboutMe = styled.h1`
-  font-size: 55px;
-  padding-top: 100px;
-  text-align: center;
 `;
 
 const Wrapper = styled.div`
@@ -29,16 +24,40 @@ const Wrapper = styled.div`
   }
 `;
 
+const Seperator = styled.div`
+  position: absolute;
+  left: 49.9%;
+  top: 140%;
+  background-color: white;
+  width: 5px;
+  height: 300px;
+  border-radius: 30px;
+
+  @media (max-width: 1700px) {
+    height: 200px;
+    top: 145%;
+  }
+
+  @media (max-width: 1300px) {
+    height: 0px;
+  }
+`;
+
 const About = () => {
   return (
-    <Container id="about">
-      <AboutMe>ABOUT ME</AboutMe>
-      <Underline />
-      <Wrapper>
-        <Description />
-        <Skills />
-      </Wrapper>
-    </Container>
+    <>
+      <Container id="about">
+        <TitleSection title={"ABOUT ME"} />
+        <Underline />
+        <Seperator></Seperator>
+        <Wrapper>
+          <Description />
+
+          <Skills />
+        </Wrapper>
+      </Container>
+      <Divider />
+    </>
   );
 };
 

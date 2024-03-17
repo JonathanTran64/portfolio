@@ -15,6 +15,13 @@ import nodejsGrayLogo from "../img/nodejsgray.png";
 import mongodbGrayLogo from "../img/mongodblogogray.png";
 import reactGrayLogo from "../img/reactLogoGray.png";
 
+import htmlWhiteLogo from "../img/html5white.png";
+import cssWhiteLogo from "../img/css3white.png";
+import jsWhiteLogo from "../img/jswhite.png";
+import nodejsWhiteLogo from "../img/nodejswhite.png";
+import mongodbWhiteLogo from "../img/mongodblogowhite.png";
+import reactWhiteLogo from "../img/reactLogowhite.png";
+
 const LogoContainer = styled.div``;
 
 const Rows = styled.div`
@@ -35,22 +42,22 @@ const Skills = () => {
       <LogoContainer>
         <MySkills>My Skills</MySkills>
         <Rows>
-          <Logo image={htmlLogo} imageGray={htmlGrayLogo} name={"HTML"} />
-          <Logo image={cssLogo} imageGray={cssGrayLogo} name={"CSS"} />
-          <Logo image={jsLogo} imageGray={jsGrayLogo} name={"JavaScript"} />
+          <Logo image={htmlLogo} imageGray={htmlWhiteLogo} name={"HTML"} />
+          <Logo image={cssLogo} imageGray={cssWhiteLogo} name={"CSS"} />
+          <Logo image={jsLogo} imageGray={jsWhiteLogo} name={"JavaScript"} />
         </Rows>
         <Rows>
           <Logo
             image={nodejsLogo}
-            imageGray={nodejsGrayLogo}
+            imageGray={nodejsWhiteLogo}
             name={"NODE.JS"}
           />
           <Logo
             image={mongodbLogo}
-            imageGray={mongodbGrayLogo}
+            imageGray={mongodbWhiteLogo}
             name={"MONGODB"}
           />
-          <Logo image={reactLogo} imageGray={reactGrayLogo} name={"REACT"} />
+          <Logo image={reactLogo} imageGray={reactWhiteLogo} name={"REACT"} />
         </Rows>
       </LogoContainer>
     </>

@@ -23,9 +23,14 @@ const LogoImg = styled.img`
     transition: transform 0.6s;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1700px) {
     width: 80px;
     height: 80px;
+  }
+
+  @media (max-width: 1500px) {
+    width: 60px;
+    height: 60px;
   }
 
   @media (max-width: 1300px) {

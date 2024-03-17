@@ -30,9 +30,9 @@ const ProfilePicture = styled.img`
 const DescriptionP = styled.p`
   font-size: 20px;
   width: 550px;
+  line-height: 35px;
 
   @media (max-width: 1500px) {
-    font-size: 17px;
     width: 450px;
   }
 
@@ -44,7 +44,7 @@ const DescriptionP = styled.p`
 
 const Bold = styled.span`
   font-weight: bold;
-  color: lightgreen;
+  color: var(--theme);
 `;
 
 const Description = () => {
