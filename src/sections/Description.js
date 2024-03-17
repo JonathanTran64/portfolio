@@ -8,7 +8,7 @@ const Container = styled.div`
   margin: 50px 0 0 120px;
   width: 30%;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     margin: 0;
   }
 `;
@@ -21,9 +21,17 @@ const ProfilePicture = styled.img`
     width: 190px;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     margin: 30px 0 20px 0;
     width: 180px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 150px;
+  }
+
+  @media (max-width: 650px) {
+    width: 130px;
   }
 `;
 
@@ -36,9 +44,18 @@ const DescriptionP = styled.p`
     width: 450px;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     font-size: 18px;
     width: 500px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 17px;
+    width: 450px;
+  }
+
+  @media (max-width: 650px) {
+    width: 350px;
   }
 `;
 

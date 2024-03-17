@@ -33,9 +33,24 @@ const LogoImg = styled.img`
     height: 60px;
   }
 
-  @media (max-width: 1300px) {
-    width: 70px;
+  @media (max-width: 1350px) {
+    width: 90px;
+    height: 90px;
+  }
+
+  @media (max-width: 1000px) {
+    width: 80px;
     height: 70px;
+  }
+
+  @media (max-width: 800px) {
+    width: 60px;
+    height: 40px;
+  }
+
+  @media (max-width: 500px) {
+    width: 60px;
+    height: 40px;
   }
 `;
 

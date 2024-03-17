@@ -19,11 +19,19 @@ const Intro = styled.h1`
   @media (max-width: 1500px) {
     font-size: 60px;
   }
+
+  @media (max-width: 800px) {
+    font-size: 40px;
+  }
 `;
 
 const Job = styled.h1`
   @media (max-width: 1500px) {
     font-size: 25px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 20px;
   }
 `;
 
@@ -48,6 +56,11 @@ const ProjectButton = styled.button`
   @media (max-width: 1500px) {
     font-size: 15px;
     width: 230px;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+    width: 190px;
   }
 `;
 

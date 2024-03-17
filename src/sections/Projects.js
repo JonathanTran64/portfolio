@@ -14,8 +14,11 @@ const Container = styled.div`
 const ProjectWrapper = styled.div`
   margin-top: 70px;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 1600px) {
+  }
 `;
 
 const Projects = () => {

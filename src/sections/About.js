@@ -9,7 +9,7 @@ import TitleSection from "./TitleSection";
 const Container = styled.div`
   height: 100vh;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     height: 100%;
   }
 `;
@@ -17,10 +17,10 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     flex-direction: column;
-    align-items: center;
   }
 `;
 
@@ -35,10 +35,10 @@ const Seperator = styled.div`
 
   @media (max-width: 1700px) {
     height: 200px;
-    top: 145%;
+    top: 150%;
   }
 
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     height: 0px;
   }
 `;
@@ -52,7 +52,6 @@ const About = () => {
         <Seperator></Seperator>
         <Wrapper>
           <Description />
-
           <Skills />
         </Wrapper>
       </Container>
