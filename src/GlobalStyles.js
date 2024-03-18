@@ -7,6 +7,10 @@ const GlobalStyles = createGlobalStyle`
 	--theme:#d8bbff;
 }
 
+textarea{
+	font-family: 'Comme', sans-serif;
+}
+
 button{
 	font-weight: bold;
 }

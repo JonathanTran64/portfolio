@@ -17,7 +17,7 @@ const Nav = () => {
       <Buttons text="Home" id="home" />
       <Buttons text="About" id="about" />
       <Buttons text="Projects" id="projects" />
-      <button>Contact</button>
+      <Buttons text="Contact" id="contact" />
     </Navbar>
   );
 };
