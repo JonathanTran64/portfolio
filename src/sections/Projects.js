@@ -43,7 +43,7 @@ const Projects = () => {
 
           <Project
             image={slingair}
-            tools={'Node.Js, MondoDB, React'}
+            tools={'Node.Js, MongoDB, React'}
             projectName={'SlingAir'}
           />
 

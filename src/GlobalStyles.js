@@ -2,8 +2,6 @@ import { createGlobalStyle } from 'styled-components';
 import backgroundPortfolio from './img/backgroundportfolio.png';
 
 const GlobalStyles = createGlobalStyle`
-
-
 :root{
 	--theme:#d8bbff;
 }
@@ -29,7 +27,6 @@ button{
 	}
 h1{
     margin: 0;
-
 }
 
 

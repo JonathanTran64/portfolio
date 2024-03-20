@@ -79,8 +79,7 @@ const Description = () => {
         continuously sharpening my skills and eagerly embracing new challenges.
         With a wide range of skills in my toolkit, I'm confident to tackle
         exciting projects head-on. Beyond coding, you'll find me reading books
-        or immersed in the virtual worlds of video games whenever I'm not at my
-        desk.
+        or immersed in the virtual worlds of video games.
       </DescriptionP>
     </Container>
   );
