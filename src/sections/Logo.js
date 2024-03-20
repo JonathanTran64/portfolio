@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import styled from "styled-components";
+import { useEffect, useState } from 'react';
+import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
@@ -9,6 +9,11 @@ const Container = styled.div`
   border-radius: 20px;
   padding: 10px 40px;
   margin: 0 30px 30px 0;
+
+  @media (max-width: 400px) {
+    width: 10px;
+    height: 50px;
+  }
 `;
 
 const LogoImg = styled.img`
@@ -48,14 +53,18 @@ const LogoImg = styled.img`
     height: 40px;
   }
 
-  @media (max-width: 500px) {
-    width: 60px;
-    height: 40px;
+  @media (max-width: 400px) {
+    width: 50px;
+    height: 30px;
   }
 `;
 
 const Name = styled.p`
   margin: 0;
+
+  @media (max-width: 400px) {
+    font-size: 10px;
+  }
 `;
 
 const Logo = ({ name, image, imageGray }) => {

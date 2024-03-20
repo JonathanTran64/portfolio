@@ -1,8 +1,9 @@
-import Nav from "./sections/Nav";
-import Home from "./sections/Home";
-import About from "./sections/About";
-import Projects from "./sections/Projects";
-import Contact from "./sections/Contact";
+import Nav from './sections/Nav';
+import Home from './sections/Home';
+import About from './sections/About';
+import Projects from './sections/Projects';
+import Contact from './sections/Contact';
+import Footer from './sections/Footer';
 
 const Hero = () => {
   return (
@@ -12,6 +13,7 @@ const Hero = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </>
   );
 };

@@ -1,15 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import Skills from "./Skills";
-import Description from "./Description";
-import Underline from "./Underline";
-import Divider from "./Divider";
-import TitleSection from "./TitleSection";
+import Skills from './Skills';
+import Description from './Description';
+import Underline from './Underline';
+import Divider from './Divider';
+import TitleSection from './TitleSection';
 
 const Container = styled.div`
   height: 100vh;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1550px) {
     height: 100%;
   }
 `;
@@ -47,7 +47,7 @@ const About = () => {
   return (
     <>
       <Container id="about">
-        <TitleSection title={"ABOUT ME"} />
+        <TitleSection title={'ABOUT ME'} />
         <Underline />
         <Seperator></Seperator>
         <Wrapper>

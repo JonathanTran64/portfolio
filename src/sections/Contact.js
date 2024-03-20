@@ -1,10 +1,11 @@
-import styled from "styled-components";
-import TitleSection from "./TitleSection";
-import Underline from "./Underline";
-import Form from "./Form";
+import styled from 'styled-components';
+import TitleSection from './TitleSection';
+import Underline from './Underline';
+import Form from './Form';
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
+  margin-bottom: 80px;
 `;
 
 const Instruction = styled.p`
@@ -19,13 +20,17 @@ const Instruction = styled.p`
   @media (max-width: 550px) {
     width: 400px;
   }
+
+  @media (max-width: 550px) {
+    width: 300px;
+  }
 `;
 
 const Contact = () => {
   return (
     <>
       <Container id="contact">
-        <TitleSection title={"CONTACT"} />
+        <TitleSection title={'CONTACT'} />
         <Underline />
         <Instruction>
           Feel free to fill out this form with your contact information and

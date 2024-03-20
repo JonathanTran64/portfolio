@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Divider from "./Divider";
-import ScrollMouse from "./ScrollMouse";
+import styled from 'styled-components';
+import Divider from './Divider';
+import ScrollMouse from './ScrollMouse';
 
 const Container = styled.div`
   display: flex;
@@ -66,8 +66,8 @@ const ProjectButton = styled.button`
 
 const Home = () => {
   const handleClick = () => {
-    const element = document.getElementById("projects");
-    element.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById('projects');
+    element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (

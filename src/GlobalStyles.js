@@ -1,7 +1,8 @@
-import { createGlobalStyle } from "styled-components";
-import backgroundPortfolio from "./img/backgroundportfolio.png";
+import { createGlobalStyle } from 'styled-components';
+import backgroundPortfolio from './img/backgroundportfolio.png';
 
 const GlobalStyles = createGlobalStyle`
+
 
 :root{
 	--theme:#d8bbff;
@@ -17,7 +18,7 @@ button{
 
   body {
 		font-family: 'Comme', sans-serif;
-		margin: 0;
+		margin: 0 auto;
 		background: url(${backgroundPortfolio});
 		background-size: cover;
 		background-repeat: no-repeat;

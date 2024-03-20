@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { useState } from 'react';
 
 const FormF = styled.form`
   margin: 0 auto;
@@ -133,19 +134,63 @@ const Button = styled.button`
   }
 `;
 
+const ThanksContainer = styled.div`
+  display: ${(props) => props.$display};
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
 const Form = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [display, setDisplay] = useState('none');
+
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+    setDisplay('block');
+
+    setName('');
+    setEmail('');
+    setMessage('');
+  };
+
   return (
     <>
-      <FormF>
+      <ThanksContainer $display={display}>
+        <h2>Thank You!</h2>
+        <p>Your form submission has been received.</p>
+      </ThanksContainer>
+      <FormF onSubmit={handleSubmit}>
         <FormFlex>
           <Label for="name">Name</Label>
-          <Input type="text" id="name" placeholder="Enter Your Name" />
+          <Input
+            type="text"
+            id="name"
+            required
+            value={name}
+            placeholder="Enter Your Name"
+            onChange={(ev) => setName(ev.target.value)}
+          />
 
           <Label for="email">Email</Label>
-          <Input type="email" id="email" placeholder="Enter Your Email" />
+          <Input
+            type="email"
+            id="email"
+            required
+            value={email}
+            placeholder="Enter Your Email"
+            onChange={(ev) => setEmail(ev.target.value)}
+          />
 
           <Label for="message">Message</Label>
-          <TextArea id="message" placeholder="Enter Your Message" />
+          <TextArea
+            id="message"
+            required
+            value={message}
+            placeholder="Enter Your Message"
+            onChange={(ev) => setMessage(ev.target.value)}
+          />
         </FormFlex>
 
         <Button type="submit">SUBMIT</Button>

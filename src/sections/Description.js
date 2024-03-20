@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import picture from "../img/sungjinwoo.jpg";
+import styled from 'styled-components';
+import picture from '../img/pfp.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -57,6 +57,11 @@ const DescriptionP = styled.p`
   @media (max-width: 650px) {
     width: 350px;
   }
+
+  @media (max-width: 550px) {
+    width: 300px;
+    font-size: 15px;
+  }
 `;
 
 const Bold = styled.span`
@@ -69,7 +74,7 @@ const Description = () => {
     <Container>
       <ProfilePicture src={picture} />
       <DescriptionP>
-        Hey there, I'm Jonathan Tran! A passionate{" "}
+        Hey there, I'm Jonathan Tran! A passionate{' '}
         <Bold>Full-Stack Web Developer </Bold>
         continuously sharpening my skills and eagerly embracing new challenges.
         With a wide range of skills in my toolkit, I'm confident to tackle

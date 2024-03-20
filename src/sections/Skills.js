@@ -1,19 +1,19 @@
-import styled from "styled-components";
-import Logo from "./Logo";
+import styled from 'styled-components';
+import Logo from './Logo';
 
-import htmlLogo from "../img/html5.png";
-import cssLogo from "../img/css3.png";
-import jsLogo from "../img/js.png";
-import nodejsLogo from "../img/nodejs.png";
-import mongodbLogo from "../img/mongodblogo.png";
-import reactLogo from "../img/reactLogo.png";
+import htmlLogo from '../img/html5.png';
+import cssLogo from '../img/css3.png';
+import jsLogo from '../img/js.png';
+import nodejsLogo from '../img/nodejs.png';
+import mongodbLogo from '../img/mongodblogo.png';
+import reactLogo from '../img/reactLogo.png';
 
-import htmlWhiteLogo from "../img/html5white.png";
-import cssWhiteLogo from "../img/css3white.png";
-import jsWhiteLogo from "../img/jswhite.png";
-import nodejsWhiteLogo from "../img/nodejswhite.png";
-import mongodbWhiteLogo from "../img/mongodblogowhite.png";
-import reactWhiteLogo from "../img/reactLogowhite.png";
+import htmlWhiteLogo from '../img/html5white.png';
+import cssWhiteLogo from '../img/css3white.png';
+import jsWhiteLogo from '../img/jswhite.png';
+import nodejsWhiteLogo from '../img/nodejswhite.png';
+import mongodbWhiteLogo from '../img/mongodblogowhite.png';
+import reactWhiteLogo from '../img/reactLogowhite.png';
 
 const LogoContainer = styled.div`
   display: flex;
@@ -25,6 +25,14 @@ const LogoContainer = styled.div`
 
   @media (max-width: 800px) {
     width: 500px;
+  }
+
+  @media (max-width: 500px) {
+    width: 400px;
+  }
+
+  @media (max-width: 400px) {
+    width: 300px;
   }
 `;
 
@@ -67,9 +75,9 @@ const SkillContainer = styled.div`
     height: 350px;
   }
 
-  /* @media (max-width: 500px) {
-    width: 300px;
-  } */
+  @media (max-width: 400px) {
+    margin-left: 35px;
+  }
 `;
 
 const Skills = () => {
@@ -77,17 +85,17 @@ const Skills = () => {
     <SkillContainer>
       <MySkills>My Skills</MySkills>
       <LogoContainer>
-        <Logo image={htmlLogo} imageGray={htmlWhiteLogo} name={"HTML"} />
-        <Logo image={cssLogo} imageGray={cssWhiteLogo} name={"CSS"} />
-        <Logo image={jsLogo} imageGray={jsWhiteLogo} name={"JavaScript"} />
+        <Logo image={htmlLogo} imageGray={htmlWhiteLogo} name={'HTML'} />
+        <Logo image={cssLogo} imageGray={cssWhiteLogo} name={'CSS'} />
+        <Logo image={jsLogo} imageGray={jsWhiteLogo} name={'JavaScript'} />
 
-        <Logo image={nodejsLogo} imageGray={nodejsWhiteLogo} name={"NODE.JS"} />
+        <Logo image={nodejsLogo} imageGray={nodejsWhiteLogo} name={'NODE.JS'} />
         <Logo
           image={mongodbLogo}
           imageGray={mongodbWhiteLogo}
-          name={"MONGODB"}
+          name={'MONGODB'}
         />
-        <Logo image={reactLogo} imageGray={reactWhiteLogo} name={"REACT"} />
+        <Logo image={reactLogo} imageGray={reactWhiteLogo} name={'REACT'} />
       </LogoContainer>
     </SkillContainer>
   );
