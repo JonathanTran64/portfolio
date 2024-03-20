@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import toolLogo from "../img/toolsLogo.png";
-import rightArrow from "../img/rightArrow.png";
+import styled from 'styled-components';
+import toolLogo from '../img/toolsLogo.png';
+import rightArrow from '../img/rightArrow.png';
 
 const ScreenShotLeft = styled.img`
   width: 500px;
@@ -124,17 +124,23 @@ const Arrow = styled.img`
   }
 `;
 
-const Project = ({ tools, image, projectName }) => {
+const Project = ({ tools, image, projectName, linkUrl }) => {
+  const handleClick = () => {
+    window.open(linkUrl, '_blank');
+  };
+
   return (
     <>
       <Container>
-        <ScreenShotLeft src={image} />
+        <a href={linkUrl} target="blank">
+          <ScreenShotLeft src={image} />
+        </a>
         <ToolWrapper>
           <ToolsLogo src={toolLogo} />
           <Tools>{tools}</Tools>
         </ToolWrapper>
         <Name>{projectName}</Name>
-        <Button>
+        <Button onClick={handleClick}>
           <Arrow src={rightArrow} />
         </Button>
       </Container>
